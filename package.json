@@ -1,0 +1,12 @@
+{
+  "name": "source-map-explorer-har",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "request": "^2.88.0",
+    "rimraf": "^3.0.0",
+    "source-map-explorer": "^2.1.1"
+  }
+}
