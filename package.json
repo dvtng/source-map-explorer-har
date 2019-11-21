@@ -1,6 +1,6 @@
 {
   "name": "source-map-explorer-har",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "bin": {
     "source-map-explorer-har": "node index.js"
