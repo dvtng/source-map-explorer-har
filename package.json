@@ -6,7 +6,6 @@
     "source-map-explorer-har": "index.js"
   },
   "license": "MIT",
-  "private": true,
   "dependencies": {
     "request": "^2.88.0",
     "rimraf": "^3.0.0",
