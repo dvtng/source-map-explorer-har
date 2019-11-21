@@ -2,6 +2,9 @@
   "name": "source-map-explorer-har",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "source-map-explorer-har": "index.js"
+  },
   "license": "MIT",
   "private": true,
   "dependencies": {
