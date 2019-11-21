@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "bin": {
-    "source-map-explorer-har": "node index.js"
+    "source-map-explorer-har": "index.js"
   },
   "license": "MIT",
   "dependencies": {
