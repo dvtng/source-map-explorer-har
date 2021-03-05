@@ -27,17 +27,17 @@ exports.prepare = async (harPath, entriesUntil) => {
   reset();
 
   const har = JSON.parse(fs.readFileSync(harPath));
-  const promises = [];
+  
   for (let entry of har.log.entries) {
     if (entry._resourceType === "script") {
+      const promises = [];
       console.log(`Downloading js and source map for ${entry.request.url}`);
       promises.push(download(entry.request.url));
       promises.push(download(entry.request.url + ".map"));
       if (entriesUntil && entry.request.url.includes(entriesUntil)) {
         break;
       }
+      await Promise.all(promises);
     }
   }
-
-  await Promise.all(promises);
 };
